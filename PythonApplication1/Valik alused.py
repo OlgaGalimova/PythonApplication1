@@ -96,13 +96,13 @@
 
 #Küsi alghind
 #alghind = float(input("Sisesta alghind: "))
-alghind=randint(0,100000)/100 #0.00 - 1000.00
-# Kontrolli, kas alghind on suurem kui 700
-if alghind > 700:
-    soodustu=alghind*0.3#как вычисляется 0.7
-    alghind-=soodustus
-    alghind*=0.7
-print("Uus hind on", alghind)
+#alghind=randint(0,100000)/100 #0.00 - 1000.00
+## Kontrolli, kas alghind on suurem kui 700
+#if alghind > 700:
+#    soodustu=alghind*0.3#как вычисляется 0.7
+#    alghind-=soodustus
+#    alghind*=0.7
+#print("Uus hind on", alghind)
 
 
 
