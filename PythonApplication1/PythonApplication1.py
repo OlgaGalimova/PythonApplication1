@@ -2,13 +2,11 @@
 #5 Рассчитать длину диагонали прямоугольного участка:
 
 #import math
-# Введите значения сторон N и M
+## Введите значения сторон N и M
 #N = float(input("Длина одной стороны участка: "))
 #M = float(input("Длина второй стороны участка: "))
-#длина диагонали прямоугольного участка по теореме Пифагора c2 = a2 + b2 
-#Чтобы извлечь квадратный корень, нужно воспользоваться функцией sqrt из модуля math 
-#math.hypot(x, y)-вычисляет гипотенузу треугольника с катетами x и y (math.sqrt(x * x + y* y)) 
-#diagonal_length = math.hypot(N,M)                         
+##длина диагонали прямоугольного участка по теореме Пифагора c2 = a2 + b2 
+##Чтобы извлечь квадратный корень, нужно воспользоваться функцией sqrt из модуля math                           
 #diagonal_length = math.sqrt(N * N + M * M)
 #diagonal_length = math.sqrt(N**2 + M**2)
 #print("Длина диагонали прямоугольного участка: ",  diagonal_length)
@@ -42,13 +40,16 @@
 #print("Среднее арифметическое: ", average)
 
 # II
-a1=randint(1,50)
-a2=randint(1,50)
-a3=randint(1,50)
-a4=randint(1,50)
-a5=randint(1,50)
-keskmine=(a1+a2+a3+a4+a5)/5
-print("Arvud:",a1,a2,a3,a4,a5,"Nende keskmine on", keskmine)
+#from random import randint #хотите импортировать (взять) функцию randint из модуля random
+##random функция для работы с случайными числами
+##randint(1, 50) предоставляет случайное целое число в диапазоне от 1 до 50 (включительно)
+#a1=randint(1,50)
+#a2=randint(1,50)
+#a3=randint(1,50)
+#a4=randint(1,50)
+#a5=randint(1,50)
+#keskmine=(a1+a2+a3+a4+a5)/5
+#print("Arvud:",a1,a2,a3,a4,a5,"Nende keskmine on", keskmine)
 
 #Определение функции:
 #def aritmeetiline_keskmine(arvud): #создаем функцию aritmeetiline_keskmine, которая принимает в качестве параметра список чисел (arvud)
@@ -95,44 +96,46 @@ print("Arvud:",a1,a2,a3,a4,a5,"Nende keskmine on", keskmine)
 
 #9 Arvutame kolmnurga ümbermõõdu. Loo kolm täisarvulist muutujat a, b, c. 
 #Loo valem, mis arvutab kolmnurga ümbermõõdu (P=a+b+c)
-#Посчитать  периметр треугольника. Создать  три целочисленные переменные a, b, c. 
+#Посчитать  периметр треугольника. Создать три целочисленные переменные a, b, c. 
 #Создать формулу, вычисляющую периметр треугольника (P=a+b+c)
 
 # Длины сторон треугольника
-#a = int(input("длинa первой стороны (a): "))
-#b = int(input("длинa второй стороны (b): "))
-#c = int(input("длинa третьей стороны (c): "))
-# Периметр треугольника
+#a = int(input("длинa первой стороны: "))
+#b = int(input("длинa второй стороны: "))
+#c = int(input("длинa третьей стороны : "))
+## Периметр треугольника
 #P = (a + b + c)
-#это f-строка, где {P} представляет собой место для вставки значения переменной P
-#print(f"Периметр треугольника:{P}") 
+#print("Периметр треугольника: ", P)
+##это f-строка, где {P} представляет собой место для вставки значения переменной P
+##print(f"Периметр треугольника:{P}") 
 
 #10 Pitsa
 #Võtsite P sõbraga suure pitsa hinnaga 12,90€.Jätate teenindajale 10% jootraha
 #Koosta programm, mis leiab kui palju peab igaüks maksma
-
 #Пицца
 #Вы и ваш друг П взяли большую пиццу за 12,90 евро.Вы оставляете официанту чаевые в размере 10%.
 #Создать программу, которая определяет, сколько каждый должен заплатить
 
-# Стоимость пиццы
+## Стоимость пиццы
 #pitsa_hind = 12.90
 
-# Процент чаевых
+## Процент чаевых
 #jootraha_protsent = 0.10  # 10% в десятичную дробь 0.10, чтобы использовать ее в дальнейших вычислениях:
-# 10% / 100 = 0.10
+## 10% / 100 = 0.10
 
-# Вычисляем сумму чаевых
-#jootraha_summa = jootraha_protsent * pitsa_hind
+## Вычисляем сумму чаевых
+#jootraha_summa = pitsa_hind * jootraha_protsent
 
-# Вычисляем общую стоимость для каждого
+## Вычисляем общую стоимость 
 #kokku_maksumus = pitsa_hind + jootraha_summa
 
-# Количество платящих людей: вы и ваш друг
+## Количество платящих людей: вы и ваш друг =2
 #inimeste_arv = 2
 
-# Посчитаем, сколько заплатит каждый
+## Посчитаем, сколько заплатит каждый
 #iga_ühe_maksumus = kokku_maksumus / inimeste_arv
+
+#print("Каждый платит: ", round(iga_ühe_maksumus,2), "eurot")
 
 # Выводим результат в формате f-string
 #print(f"Каждый платит {iga_ühe_maksumus:.2f} eurot")
