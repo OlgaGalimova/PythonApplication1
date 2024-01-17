@@ -252,18 +252,17 @@
 
 #цена_товара = float(input("Введите цену товара: "))
 
-#if цена_товара == 10:
+#if цена_товара <= 10:
 #    скидка = цена_товара * 0.1  # 10% скидка
 #    print("Скидка на товар 10%")
-#elif цена_товара < 10:
+#else:
 #    скидка = цена_товара * 0.2  # 20% скидка
 #    print("Скидка на товар 20%")
-#else:
-#    скидка = 0
-#    print("Без скидки")
 
-#конечная_сумма  = цена_товара - скидка
+#конечная_сумма = цена_товара - скидка
+
 #print("Cумма после скидки равна: ", round (конечная_сумма,2))
+
 
 #13 Jalgpalli meeskond
 #Sa pead looma programmi, mis kontrollib kas kandideerija sobib antud meeskonda.Vanus peab jääma vahemikku 16-18 ning lubatud on ainult meessugu.Täienda programmi nii, et kui kandideerija on naissoost, siis vanust üldse ei küsita
