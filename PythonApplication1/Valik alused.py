@@ -192,9 +192,6 @@
 #    else:
 #        print("Вы решили не покупать", продукты)
 
-#print("\n--- Чек ---")
-#print("\n".join(f"{продукт}: {стоимость} руб." for продукт, стоимость in продукты.items()))
-#print(f"Итого: {sum(продукты.values())} руб.")
 
 #9 Kasutaja sisestab ruudu küljed ning programm tuvastab kas tegemist saab olla ruuduga.
 #Пользователь вводит стороны квадрата, и программа определяет, может ли это быть квадрат
