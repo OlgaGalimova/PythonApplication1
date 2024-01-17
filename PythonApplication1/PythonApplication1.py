@@ -2,14 +2,14 @@
 #5 Рассчитать длину диагонали прямоугольного участка:
 
 #import math
-## Введите значения сторон N и M
+# Введите значения сторон N и M
 #N = float(input("Длина одной стороны участка: "))
 #M = float(input("Длина второй стороны участка: "))
 ##длина диагонали прямоугольного участка по теореме Пифагора c2 = a2 + b2 
 ##Чтобы извлечь квадратный корень, нужно воспользоваться функцией sqrt из модуля math                           
 #diagonal_length = math.sqrt(N * N + M * M)
 #diagonal_length = math.sqrt(N**2 + M**2)
-#print("Длина диагонали прямоугольного участка: ",  diagonal_length)
+##print("Длина диагонали прямоугольного участка: ",  diagonal_length)
 
 
 # 6 Leidke järgnevast näiteprogrammist semantiline viga:
@@ -28,15 +28,15 @@
 # 7 Koostada programm, mis arvutab aritmeetilise keskmise suvalisest etteantud 5 täis arvu
 # Вычислить среднее арифметическое любых заданных пяти целых чисел
 
-# Введём пять целых чисел
+# #Введём пять целых чисел
 #num1 = int(input("Введём первое число: "))
 #num2 = int(input("Введём второе число: "))
 #num3 = int(input("Введём третье число: "))
 #num4 = int(input("Введём четвертое число: "))
 #num5 = int(input("Введём пятое число: "))
-# Вычислим среднее арифметическое (average)
+# #Вычислим среднее арифметическое (average)
 #average = (num1 + num2 + num3 + num4 + num5) / 5
-# Вывод  результата 
+# #Вывод  результата 
 #print("Среднее арифметическое: ", average)
 
 # II
