@@ -36,6 +36,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Blank diagram %282%29.pdf" />
     <Content Include="Blank diagram.pdf" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
