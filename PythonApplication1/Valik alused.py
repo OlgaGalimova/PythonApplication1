@@ -196,6 +196,21 @@
 #print("\n".join(f"{продукт}: {стоимость} руб." for продукт, стоимость in продукты.items()))
 #print(f"Итого: {sum(продукты.values())} руб.")
 
+#9 Kasutaja sisestab ruudu küljed ning programm tuvastab kas tegemist saab olla ruuduga.
+#Пользователь вводит стороны квадрата, и программа определяет, может ли это быть квадрат
+
+## Ввод сторон квадрата от пользователя
+#сторона1 = float(input("Введите длину первой стороны квадрата: "))
+#сторона2 = float(input("Введите длину второй стороны квадрата: "))
+#сторона3 = float(input("Введите длину третьей стороны квадрата: "))
+#сторона4 = float(input("Введите длину четвертой стороны квадрата: "))
+
+## Проверка, являются ли введенные значения сторонами квадрата
+#if сторона1 == сторона2 == сторона3 == сторона4:
+#    print("Этo квадрат.")
+#else:
+#    print("Этo не  квадрат.")
+
 
 #10 Matemaatika
 #Kasutaja sisestab kaks arvu ning programm küsib kasutajalt, mis tehet ta soovib (+-*/) ning viib kasutaja valiku ellu.
