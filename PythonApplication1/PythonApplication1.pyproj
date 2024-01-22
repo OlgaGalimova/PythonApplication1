@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>8c37605e-13a9-4bed-9bc4-86a697063894</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>kehamassiindeks.py</StartupFile>
+    <StartupFile>kordused (10 hajutused).py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,6 +22,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="kehamassiindeks.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="kordused %2810 hajutused%29.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="kordused.py">

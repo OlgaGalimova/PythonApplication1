@@ -56,21 +56,14 @@
         
 
 
-
-
-
-
-
-#print()
-
-#for i in range(10,0,-2):
-#    print(i)
+#for i in range(10,0,-2): #for i in range(начало, конец, шаг):
+#    print(i) #10,8,6,4,2; 0 - не включительно;шаг -2 (на уменьшение, -2 не включительно)
 
 #for i in range(15): #1-14, samm =1
 #    print(i,"samm")
 
 #for i in rahge(10):
-#    n=input("Nimi: ")
+#    n=input("Nimi: ") #
 #    print("\tTere",n)
 
 #print()

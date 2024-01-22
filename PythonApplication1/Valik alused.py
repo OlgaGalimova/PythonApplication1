@@ -286,19 +286,19 @@
 ##Рассчитываем количество автобусов и людей
 #количество_автобусов = количество_людей // вместимость_автобуса
 
-bussi_maht=int(input("Maht: "))#20
-k=int(input("Kogus: ")) #110
-busside_arv=k/bussi_maht
-if busside_arv!=int(busside_arv): # != не равно
-    busside_arv+=1
+#bussi_maht=int(input("Maht: "))#20
+#k=int(input("Kogus: ")) #110
+#busside_arv=k/bussi_maht
+#if busside_arv!=int(busside_arv): # != не равно
+#    busside_arv+=1
 
-#busside_arv=k//bussi_maht #100//20=5
-#jääk=k%bussi_maht #10 Остаток получаем только целую часть (10/3=3.333 целую часть =3)
-#if jääk==0:
-#    busside_arv=k//bussi_maht
-#else:
-#    busside_arv=k//bussi_maht+1
-print("On vaja ",busside_arv)
+##busside_arv=k//bussi_maht #100//20=5
+##jääk=k%bussi_maht #10 Остаток получаем только целую часть (10/3=3.333 целую часть =3)
+##if jääk==0:
+##    busside_arv=k//bussi_maht
+##else:
+##    busside_arv=k//bussi_maht+1
+#print("On vaja ",busside_arv)
 
 
 
