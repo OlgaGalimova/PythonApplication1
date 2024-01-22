@@ -1,31 +1,31 @@
-## if, else -
-#print("Tere! Olen sinu uus sõber - Python!")
-#nimi = input("Sisesta oma nimi: ")
-#print(nimi + ", oi kui ilus nimi!")
-#vastus = int(input(nimi + "! Kas leian Sinu keha indeksi? 0-ei, 1-jah => "))
-#if vastus =="1":
-#    print("Indexi leidmine")
-#else:
-#    print("Kahju! See on väga kasulik info!")
-#    print()
-#    print("Kohtumiseni, " + nimi + "! Igavesti Sinu, Python!")
+# if, else -
+print("Tere! Olen sinu uus sõber - Python!")
+nimi = input("Sisesta oma nimi: ")
+print(nimi + ", oi kui ilus nimi!")
+vastus = int(input(nimi + "! Kas leian Sinu keha indeksi? 0-ei, 1-jah => "))
+if vastus =="1":
+    print("Indexi leidmine")
+else:
+    print("Kahju! See on väga kasulik info!")
+    print()
+    print("Kohtumiseni, " + nimi + "! Igavesti Sinu, Python!")
 
 # Находим дополнительные значения вместе с проверкой try, except
 ##try, except - ошибоки, которые могут возникнуть во время выполнения программы
-#print("Tere! Olen sinu uus sõber - Python!")
-#nimi = input("Sisesta oma nimi: ")
-#print(nimi + ", oi kui ilus nimi!")
-#vastus = int(input(nimi + "! Kas leian Sinu keha indeksi? 0-ei, 1-jah => "))
-#if vastus =="1":
-#    print("Indexi leidmine")
-#    try:
-#        pikkus=int(input("Pikkus: "))
-#        mass=float(input("Kaal: "))
-#    except :
-#        print("Viga!")
-#        print("Kahju! See on väga kasulik info!")
-#        print()
-#        print("Kohtumiseni, " + nimi + "! Igavesti Sinu, Python!")
+print("Tere! Olen sinu uus sõber - Python!")
+nimi = input("Sisesta oma nimi: ")
+print(nimi + ", oi kui ilus nimi!")
+vastus = int(input(nimi + "! Kas leian Sinu keha indeksi? 0-ei, 1-jah => "))
+if vastus =="1":
+    print("Indexi leidmine")
+    try:
+        pikkus=int(input("Pikkus: "))
+        mass=float(input("Kaal: "))
+    except :
+        print("Viga!")
+        print("Kahju! See on väga kasulik info!")
+        print()
+        print("Kohtumiseni, " + nimi + "! Igavesti Sinu, Python!")
 
 #while True - повторение цикла try; except     
 print("Tere! Olen sinu uus sõber - Python!")
