@@ -197,3 +197,13 @@
 #    if i >= N:
 #        break
 #print("Сумма вклада через", N, "лет составит:", round(summa, 2))
+
+A=int(input("Введите число A: "))
+summa = 0
+for k in range(1, A + 1):
+    n = float(input("Sisesta число. arv: "))
+    if int(n)==float(n):
+      summa+=k
+
+
+
