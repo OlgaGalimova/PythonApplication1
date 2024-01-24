@@ -130,5 +130,25 @@
 #        print("on vaja int format kasutada!")# ilmub ekraanil 
 
 #print("Töö lõpp")
+#Koosta programm, mis küsib kasutajalt 10 korda arve ja väljastab seejärel nende arvude summa.
+#Täienda seda programmi nii, et kasutajalt küsitakse arve seni, kuni kasutaja enam uut arvu ei sisesta, vaid vajutab lihtsalt sisestusklahvi.
+#Proovige seda ülesannet lahendada nii while- kui for-tsükliga.
+#2 С использованием цикла while:
+summa = 0
+arv = 0
 
+while True:
+    try:
+        number = input("Введите число: ")
+        if number.lower() == 'ввод':
+            break
+        number = float(number)
+        summa += number
+        arv += 1
+    except:
+        print("Ошибка ввода. Пожалуйста, введите число.")
 
+if arv > 0:
+    print("Сумма введенных чисел:", sum_numbers)
+else:
+    print("Вы не ввели ни одного числа.")

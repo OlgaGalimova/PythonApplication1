@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>8c37605e-13a9-4bed-9bc4-86a697063894</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>kaupluse tsekk.py</StartupFile>
+    <StartupFile>praktiline too kordused.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="kaupluse tsekk.py">
+    <Compile Include="praktiline too kordused.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="kehamassiindeks.py">
