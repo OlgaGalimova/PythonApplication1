@@ -66,6 +66,7 @@
 #    n=input("Nimi: ") #
 #    print("\tTere",n)
 
+
 #print()
 #vastus=""
 #while vastus.lower()!="komm":
