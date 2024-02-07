@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>8c37605e-13a9-4bed-9bc4-86a697063894</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Kordused (paaris).py</StartupFile>
+    <StartupFile>List.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,6 +22,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Kordused %28paaris%29.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="List.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Matemaatika.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="praktiline too kordused.py">
