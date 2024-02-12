@@ -1,5 +1,6 @@
 ###1.Напишите программу, которая по данному числу n от 1 до 9 выводит на экран n домов. Между двумя соседними башнями такжимеется пустой (из пробелов) столбец. Разрешается вывести пустой столбец после последней башни. Для упрощения рисования скопируйте башню из примера в среду разработки.
 
+
 from random import *
 n=randint(1,10)
 x = [
@@ -10,37 +11,55 @@ x = [
 
 for i in x:
     print(i * n)
-##3
+#4
 
-#from random import randint
+from random import *
+L=int(input("Pikkus: "))
+H=int(input("Laius: "))
+for j in range(H):
+    for x in range(L):
+        print(randint(-10,100),end=" ")
+    print()
 
-## Запрос размеров матрицы у пользователя
 
-#from random import randint
 
-## Запрос размеров матрицы у пользователя
-#L = int(input("Введите количество строк (L): "))
-#H = int(input("Введите количество столбцов (H): "))
+#2
 
-## Создание и заполнение матрицы
-#matrix = []
-#for _ in range(L):
-#    row = [randint(10, 99) for _ in range(H)]
-#    matrix.append(row)
+Summa = []
+while len(Summa) < 5:
+    Kulu = float(input("Введите сумму трат за месяц: "))
+    Summa.append(Kulu)
+Keskmine = sum(Summa) / 12
+print("Средняя сумма трат за год:", round(Keskmine, 2))
 
-## Вывод матрицы на экран
-#print(matrix)
 
-#for i in range(размер_матрицы):
-#for j in range(размер_матрицы):
-#matrix[i][j] = random() * (верхняя_граница - нижняя_граница) + нижняя_граница
-  
 
-#N = 5
-#M = 4
-#import random
-#for i in range(N) :
-    
-# for j in range(M) :
-        
-#print(matrix)
+#5
+
+from random import *
+
+töötajad = int(input("Kogu töötajate arv: "))
+A =1000
+
+for i in range(töötajad):
+    palk = randint(400,2000)
+    print ("Palk: ",palk)
+    if palk <= A:
+        print("Töötaja on pensionär")
+    else:
+        print("Töötaja ei ole pensionär")
+
+
+#3
+
+pikkus_kokku = int(input("Введите длину куска ткани в метрах: "))
+kasutatud_pikkus = 0
+while pikkus_kokku - kasutatud_pikkus > 0:
+    järgmine_pikkus = int(input("Введите длину следующего куска ткани в метрах (или 0 для завершения): "))
+    if järgmine_pikkus <= pikkus_kokku - kasutatud_pikkus:
+        kasutatud_pikkus += järgmine_pikkus
+        print(f"Использовано {kasutatud_pikkus} метров ткани из {pikkus_kokku} метров.")
+    else:
+        print("Материала недостаточно.")
+        break
+print("Использование ткани завершено.")

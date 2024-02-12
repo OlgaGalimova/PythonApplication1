@@ -255,27 +255,30 @@
 #nimed[indeks]=uus_nimi
 
 
-nimed=[]
-for i in range(5):
-    nimi=input("Sisesta nimi: ")
-    nimed.append (nimi)
+#nimed=[]
+#for i in range(5):
+#    nimi=input("Sisesta nimi: ")
+#    nimed.append (nimi)
 
-print("Sisestatud: ", nimed)
-nimed.sort()
-print("Sorteeritud:", nimed)
-print("Viimasena oli lisatud:", nimi)#Kuva eraldi viimati lisatud nimi (Показать фамилию, добавленную последним)
-nimi=input("Mis nimi vaja asendada? ")# только одно имя 
-indeks=nimed.index(nimi) #заменяем   на новое имя  index
-uus_nimi=input("Uus nimi: ")
-nimed = [uus_nimi if vana_nimi == nimi else vana_nimi for vana_nimi in nimed]
-nimed=set(nimed)# kodus
-print(nimed)
-nimed=[]
-for i in range(5):
-    v=int(input("Sisesta nimi: "))
-    vanused.append (v)
-sum_=sum(vanused)
-min_=min(vanused)
-max_=max(vanused)
-kesk_sum_/len(vanused) 
-print("Keskmine on {kesk}, \nSuurim on {max_}, \nVaiksem on {min_},\nSumma on {sum_}")
+#print("Sisestatud: ", nimed)
+#nimed.sort()
+#print("Sorteeritud:", nimed)
+#print("Viimasena oli lisatud:", nimi)#Kuva eraldi viimati lisatud nimi (Показать фамилию, добавленную последним)
+#nimi=input("Mis nimi vaja asendada? ")# только одно имя 
+#indeks=nimed.index(nimi) #заменяем   на новое имя  index
+#uus_nimi=input("Uus nimi: ")
+#nimed = [uus_nimi if vana_nimi == nimi else vana_nimi for vana_nimi in nimed]
+#nimed=set(nimed)# kodus
+#print(nimed)
+#nimed=[]
+#for i in range(5):
+#    v=int(input("Sisesta nimi: "))
+#    vanused.append (v)
+#sum_=sum(vanused)
+#min_=min(vanused)
+#max_=max(vanused)
+#kesk_sum_/len(vanused) 
+#print("Keskmine on {kesk}, \nSuurim on {max_}, \nVaiksem on {min_},\nSumma on {sum_}")
+
+
+
