@@ -113,10 +113,12 @@
 #kesk_sum_/len(vanused) 
 #print("Keskmine on {kesk}, \nSuurim on {max_}, \nVaiksem on {min_},\nSumma on {sum_}")
 
+
 ## 3 Tärnid.  Kasuta loendis olevate arvude väärtusi ning loo tärnide abil lintdiagramm. Näiteks:
 #num_list = [8, 15, 22, 30, 38, 5]
 #for number in num_list:
 #    print("*" * number)
+
 
 ## 4
 #while True:
@@ -153,10 +155,42 @@
 #else:
 #    print("Носите маски!")
 
-#5 reverse(): изменяет порядок элементов в списке на обратный
+##5
 
-user_list = input("Введите элементы списка через пробел: ")
+##Vahetus - Напишите программу, которая меняет местами первый и последний элементы. (второй и предпоследний и т.д.). Количество меняемых местами элементов надо спросить у пользователя. В исходном списке минимум 2 элемента.
 
-#numbers = [1, 2, 3, 4]
-#numbers.reverse()
-#print(numbers) # [4, 3, 2, 1]
+#my_list = input("Введите элементы списка: " )
+##my_list = list(my_list)
+
+#if len(my_list) < 2:
+#    print("В исходном списке должно быть как минимум 2 элемента.")
+#else:
+#    for i in range(0, len(my_list)-1, 2):
+#        my_list[i], my_list[i+1] = my_list[i+1], my_list[i]
+
+#    print("Измененный список:", my_list)
+#print()
+
+# 6
+
+#my_list = [1, 8, 60, 35, 13, 11]
+#print("Первоначальный список: ", my_list )
+#length_of_list = len(my_list)  # Длина списка - 6
+#max_value = max(my_list)  # Находим максимальное число в списке - 60
+#result = max_value // length_of_list # Делим максимальное число на длину списка
+#max_index = my_list.index(max_value)
+#my_list[max_index] = result # Заменяем максимальное число в списке результатом деления
+
+#print("Измененный список:", my_list)
+
+#7 
+
+#my_list = [8, 9, 7,2 ,3 ,1 ,-55, -6]
+#my_list.sort() # Сортировка списка в порядке возрастания
+#print(my_list)
+#my_list.sort(reverse=True) # Сортировка списка в порядке убывания
+#print(my_list)
+
+
+#8
+name = input("Введите  ваше имя. ")
