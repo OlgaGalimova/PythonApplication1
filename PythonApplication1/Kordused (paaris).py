@@ -19,18 +19,18 @@
 #for j in range(H):
 #    for x in range(L):
 #        print(randint(-10,100),end=" ")
-#    print()
+##    print()
 
 
 
-#2
+##2
 
-Summa = []
-while len(Summa) < 5:
-    Kulu = float(input("Введите сумму трат за месяц: "))
-    Summa.append(Kulu)
-Keskmine = sum(Summa) / 12
-print("Средняя сумма трат за год:", round(Keskmine, 2))
+#Summa = []
+#while len(Summa) < 5:
+#    Kulu = float(input("Введите сумму трат за месяц: "))
+#    Summa.append(Kulu)
+#Keskmine = sum(Summa) / 12
+#print("Средняя сумма трат за год:", round(Keskmine, 2))
 
 
 

@@ -183,14 +183,14 @@
 
 #print("Измененный список:", my_list)
 
-#7 
+##7 
 
-#my_list = [8, 9, 7,2 ,3 ,1 ,-55, -6]
-#my_list.sort() # Сортировка списка в порядке возрастания
-#print(my_list)
-#my_list.sort(reverse=True) # Сортировка списка в порядке убывания
-#print(my_list)
+##my_list = [8, 9, 7,2 ,3 ,1 ,-55, -6]
+##my_list.sort() # Сортировка списка в порядке возрастания
+##print(my_list)
+##my_list.sort(reverse=True) # Сортировка списка в порядке убывания
+##print(my_list)
 
 
-#8
-name = input("Введите  ваше имя. ")
+##8
+#name = input("Введите  ваше имя. ")
