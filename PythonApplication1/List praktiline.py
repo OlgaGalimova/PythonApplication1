@@ -115,12 +115,59 @@
 
 
 ## 3 Tärnid.  Kasuta loendis olevate arvude väärtusi ning loo tärnide abil lintdiagramm. Näiteks:
+#Решение учителя 
+
+#from random import *
+#from string import *# для любой программы 
+##3**********
+#while True:
+#    try:
+#        N=int(input("Mitu rida loome?"))
+#        break
+#    except:
+#        print("Vale tuup")
+#while True:
+#    try:
+#        S=input("Mis sumbol korrutame?") #*
+#        if S in punctuation:
+#            break
+#        else:
+#          print("Vale sumbol")
+#    except:
+#        print("Vale sumbol")
+#for i in range(N):
+#    print(randint(1,25)*S)
+
+#Мое решение 
 #num_list = [8, 15, 22, 30, 38, 5]
 #for number in num_list:
 #    print("*" * number)
 
 
-## 4
+## 4 Index
+#Решение учителя 
+
+#Indeksid=["Tallinn","Narva, Narva-Jõesuu","Kohtla-Järve", "Ida-Virumaa, Lääne-Virumaa, Jõgevamaa","Tartu linn", "Tartumaa, Põlvamaa, Võrumaa, Valgamaa","Viljandimaa, Järvamaa, Harjumaa, Raplamaa","Pärnumaa","Läänemaa, Hiiumaa, Saaremaa"   ]
+#print(Indeksid [0])
+#while True:
+#    indeks = input("Indeks:")
+#    if len(indeks) == 5 and indeks.isdigit() and indeks[0] != "0":
+#        print("Sa elad piirkonnas", Indeksid[int(indeks[0])-1])
+#        if indeks[0] == "1" or indeks[0] == "2" or indeks[0] == "3":#indeks[0] in ["1","2","3"]
+#            print("Kodus")
+#        else:
+#            print("Maskid")
+#            # break
+#    else:
+#        print("Sisesta indeksi uuesti:")
+          
+
+#if indeks in [1, 2, 3]:
+#    print("Оставайтесь дома!")
+#else:
+#    print("Носите маски!")
+
+#Мое решение
 #while True:
 #    postiindeks = input("Введите почтовый индекс Эстонии: ")
 #    if len(postiindeks) == 5:
@@ -145,11 +192,11 @@
 #    maakond = "Viljandimaa, Järvamaa, Harjumaa, Raplamaa"
 #elif esimene_number == 8:
 #    maakond = "Pärnumaa"
+
 #elif esimene_number == 9:
 #    maakond = "Läänemaa, Hiiumaa, Saaremaa"
 
 #print(f"Почтовый индекс {postiindeks} относится к мааконду: {maakond}")
-
 #if esimene_number in [1, 2, 3]:
 #    print("Оставайтесь дома!")
 #else:
@@ -159,8 +206,28 @@
 
 ##Vahetus - Напишите программу, которая меняет местами первый и последний элементы. (второй и предпоследний и т.д.). Количество меняемых местами элементов надо спросить у пользователя. В исходном списке минимум 2 элемента.
 
+##Решение учителя 
+#from string import *
+#from random import *
+#rida=[]
+#N=randin(2,25)
+#for i in range(N):
+#    rida.append(choice(ascii_uppercase))
+#print(rida)
+#n=int(input("Mitu paari vahetada "))
+#if len(rida)//2>=n:
+#    for i in range(n):
+#        abi=rida[i]
+#        rida[i]=rida[len(rida)-1-i]
+#        rida[len(rida)-1-i]=abi
+#else:
+#    print("Liiga vahe elemente")
+#print(rida)
+
+#Мое решение
+
 #my_list = input("Введите элементы списка: " )
-##my_list = list(my_list)
+#my_list = list(my_list)
 
 #if len(my_list) < 2:
 #    print("В исходном списке должно быть как минимум 2 элемента.")
@@ -172,6 +239,16 @@
 #print()
 
 # 6
+#from random import *
+#from string import *
+#arvud=[1,2,3,8,9,45,88]
+#max_=max(arvud)
+#indeks=arvud.index(max_)
+#max_=int(max_/len(arvud))#round (max_/len(arvud))
+#arvud[indeks]=max_
+#print(arvud)
+
+#Мое решение
 
 #my_list = [1, 8, 60, 35, 13, 11]
 #print("Первоначальный список: ", my_list )
@@ -183,14 +260,27 @@
 
 #print("Измененный список:", my_list)
 
-##7 
+#7 
+#Мое решение
+#my_list = [8, 9, 7,2 ,3 ,1 ,-55, -6]
+#my_list.sort() # Сортировка списка в порядке возрастания
+#print(my_list)
+#my_list.sort(reverse=True) # Сортировка списка в порядке убывания
+#print(my_list)
 
-##my_list = [8, 9, 7,2 ,3 ,1 ,-55, -6]
-##my_list.sort() # Сортировка списка в порядке возрастания
-##print(my_list)
-##my_list.sort(reverse=True) # Сортировка списка в порядке убывания
-##print(my_list)
+#12
 
+#import random
+#Мое решение
 
-##8
-#name = input("Введите  ваше имя. ")
+#numbers = []
+#for i in range(10):
+#    numbers.append(random.randint(0, 20))
+#print("Algne loend:", numbers)
+
+#max_ = numbers.index(max(numbers))
+#min_ = numbers.index(min(numbers))
+
+#numbers[max_], numbers[min_] = numbers[min_], numbers[max_]
+
+#print(numbers)
