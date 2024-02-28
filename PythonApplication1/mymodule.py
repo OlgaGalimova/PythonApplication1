@@ -16,32 +16,109 @@
 #    :return:самая маленьkая зарплатa и имя человека, который ее получает.
 #    :rtype: tuple
 #    """
-#    return min_palk, kellel
+##    return min_palk, kellel
 
-#10-Keskmine() - Среднюю зарплату и имя человека ее получающего
-def keskmine(palk: list, inimesed: list) -> float:
-    """Рассчитывает среднюю зарплату.
-    :param list palk: Список зарплат
-    :param list inimesed: Список имен
-    :return: Средняя зарплата
-    :rtype: float
-    """
-    summa = sum(palk)
-    n = len(palk)
-    keskmine_palk = summa / n
-    index_max_palk = palk.index(max(palk))
-    nimi_max_palk = inimesed[index_max_palk]
-    return keskmine_palk
+##10-Keskmine() - Среднюю зарплату и имя человека ее получающего
+#def keskmine(palk: list, inimesed: list) -> float:
+#    """Рассчитывает среднюю зарплату.
+#    :param list palk: Список зарплат
+#    :param list inimesed: Список имен
+#    :return: Средняя зарплата
+#    :rtype: float
+#    """
+#    summa = sum(palk)
+#    n = len(palk)
+#    keskmine_palk = summa / n
+#    index_max_palk = palk.index(max(palk))
+#    nimi_max_palk = inimesed[index_max_palk]
+#    return keskmine_palk
   
 
 
+##Работа в классе 
+
+#28.02.2024
+
+##1-Добавить еще несколько человек и зарплат(кол-во говорит пользователь)
+#def andmete_lisamine(inimesed:list, palgad:list)->any:
+#    """
+#    """
+#    while True:
+#        try:
+#            n=int(int("Mitu inimest "))
+#            if n>0: break
+#        except:
+#            print("Viga. Proovi uuesti!")
+#    for j in range(n):
+#        nimi=int(input("Nimi: "))
+#        palk=int(input("Palk: "))
+#        inimesed.append(nimi)
+#        palgad.append(palk)
+#    return inimesed, palgad
+#def naita_andmed (inimesed:list, palgad:list):
+#    """
+#    """
+#    for j in range(len(inimesed)):
+#        print(inimesed[j],"-",palgad[j])
 
 
 
+#2-Удалить человека и его зарплату(вводим имя)
+#def andmete_kustutamine(inimesed: list, palgad: list) -> any:
+#    nimi = input("Keda kustutada ära? (nimi)")
+#    if nimi not in inimesed:
+#        print(f"{nimi} puudub")
+#    else:
+#        for i in range(len(inimesed)):
+#            if nimi in inimesed:
+#                palgad.pop(i(index(nimi)
+#                inimesed.remove(nimi)
+#                break  # Как только элемент найден и удален, выйдите из цикла.
+#     #else:
+#    #    index = inimesed.index(nimi)
+#    #    inimesed.pop(index)# pop-удаление из списка 
+#    #    palgad.pop(index)
+#    #    print(f"{nimi} on kustutatud")
+#    return inimesed, palgad
 
+ #3 Кто получает самую большую зарплату и кто ее получает
 
+def kellel_on_suurim_palk(inimesed:list,palgad:list)->list:
+    """
+    """
+    max_palk=max(palgad)
+    nimed=[]
+    max_palk=max(palgad)
+    ind=palgad.index(max_palk)
+    for palk in palgad:
+        if max_palk==palk:
+            nimi=inimesed[palgad.index(palk,ind)]
+            nimed.append(nimi)
+    return nimed
 
+#Мое решение 
+#palgad = [1200, 2500, 750, 395, 1200]
+#inimesed = ["A", "B", "C", "D", "E"]
+#max_palk = 0  # Значение по умолчанию
+#kellel = ""
+#for p in palgad:
+#    if p > max_palk:
+#        max_palk = p
+#        i = palgad.index(p)
+#        kellel = inimesed[i]
+#print(f"Самая большая зарплата {max_palk} у {kellel}") 
 
+#5-Упорядочить зарплаты в порядке возрастания и убывания вместе с именами,
+ 
+def sorteerimine (i:list,p:list)->any:
+    """
+    """
+    for n in range (0, len(i)):
+        for m in range(n,len(i)):
+            if p[n]>p[m]:
+                p[n],p[m]=p[m],p[n]
+                i[n],i[m]=i[m],i[n]
+    return i,p
 
 
 

@@ -28,25 +28,72 @@
 #        kellel = inimesed[i]
 #print(f"Самая маленькая зарплата {min_palk} у {kellel}")
 
-#10-Keskmine() - Среднюю зарплату и имя человека ее получающего
-palgad = [1200, 2500, 750, 395, 1200]
-inimesed = ["A", "B", "C", "D", "E"]
-def lisada_inimesi_ja_palku():
-    while True:
-        nimi = input("Введите имя (или 'стоп' для завершения): ")
-        if nimi.lower() == 'стоп':
-            break
-        palk = float(input("Введите зарплату: "))
-        inimesed.append(nimi)
-        palgad.append(palk)
-lisada_inimesi_ja_palku()
-result, nimi_max_palk = keskmine(palgad, inimesed)
-print(f"Средняя зарплата: {result}, Имя человека с максимальной зарплатой: {nimi_max_palk}")
+##10-Keskmine() - Среднюю зарплату и имя человека ее получающего
+#palgad = [1200, 2500, 750, 395, 1200]
+#inimesed = ["A", "B", "C", "D", "E"]
+#def lisada_inimesi_ja_palku():
+#    while True:
+#        nimi = input("Введите имя (или 'стоп' для завершения): ")
+#        if nimi.lower() == 'стоп':
+#            break
+#        palk = float(input("Введите зарплату: "))
+#        inimesed.append(nimi)
+#        palgad.append(palk)
+#lisada_inimesi_ja_palku()
+#result, nimi_max_palk = keskmine(palgad, inimesed)
+#print(f"Средняя зарплата: {result}, Имя человека с максимальной зарплатой: {nimi_max_palk}")
 
 
 
 
 ##Работа в классе 
+#28.02.2024
+#1-Добавить еще несколько человек и зарплат(кол-во говорит пользователь)
+#2-Удалить человека и его зарплату(вводим имя)
+
+from mymodule import *
+
+palgad=[1200,2500,750,395,1200,2500]
+inimesed=["A","B","C","D","E","D"]
+
+while True:
+    print("0-Andmed ekraanile\n1-Andmete lisamine\n2-Andmete eemaldamine\n3 - kelle on suurim palk\4-sorteerimine\n")
+    vastus=int(input())
+    if vastus==0:
+        naita_andmed(inimesed,palgad)
+    elif vastus==1:
+        inimesed,palgad=andmete_lisamine(inimesed,palgad) #1-Добавить еще несколько человек и зарплат(кол-во говорит пользователь)
+    elif vastus==2:
+        inimesed,palgad=andmed_kustutamine(inimesed, palgad) #2-Удалить человека и его зарплату(вводим имя)
+    elif vastus==3:
+        rikkad_inimesed=kellel_on_suurim_palk(inimesed, palgad)#3 Кто получает самую большую зарплату и кто ее получает
+    elif vastus==4:
+
+
+   
+#Мое решение 
+
+#palgad = [1200, 2500, 750, 395, 1200]
+#inimesed = ["A", "B", "C", "D", "E"]
+#max_palk = 0  # Значение по умолчанию
+#kellel = ""
+#for p in palgad:
+#    if p > max_palk:
+#        max_palk = p
+#        i = palgad.index(p)
+#        kellel = inimesed[i]
+#print(f"Самая большая зарплата {max
+
+
+
+
+
+
+
+
+
+
+
 #from mymodule import *
 ##1
 #summa_3=summa(5,8,12)
