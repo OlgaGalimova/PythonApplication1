@@ -1,0 +1,12 @@
+jaanuar
+veebruar
+marts
+aprill
+mai
+juuni
+juuuli
+august
+september
+oktoober
+november
+detsember

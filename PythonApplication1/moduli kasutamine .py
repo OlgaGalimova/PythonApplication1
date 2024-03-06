@@ -1,5 +1,10 @@
 
-##домашняя работа  
+##домашняя работа 
+
+
+
+
+ 
 #4 Кто получает самую большую зарплату и кто ее получает
 #from mymodule import *
 
@@ -51,24 +56,40 @@
 #1-Добавить еще несколько человек и зарплат(кол-во говорит пользователь)
 #2-Удалить человека и его зарплату(вводим имя)
 
-from mymodule import *
+#from mymodule import *
 
-palgad=[1200,2500,750,395,1200,2500]
-inimesed=["A","B","C","D","E","D"]
+#palgad=[1200,2500,750,395,1200,2500]
+#inimesed=["A","B","C","D","E","D"]
 
-while True:
-    print("0-Andmed ekraanile\n1-Andmete lisamine\n2-Andmete eemaldamine\n3 - kelle on suurim palk\4-sorteerimine\n")
-    vastus=int(input())
-    if vastus==0:
-        naita_andmed(inimesed,palgad)
-    elif vastus==1:
-        inimesed,palgad=andmete_lisamine(inimesed,palgad) #1-Добавить еще несколько человек и зарплат(кол-во говорит пользователь)
-    elif vastus==2:
-        inimesed,palgad=andmed_kustutamine(inimesed, palgad) #2-Удалить человека и его зарплату(вводим имя)
-    elif vastus==3:
-        rikkad_inimesed=kellel_on_suurim_palk(inimesed, palgad)#3 Кто получает самую большую зарплату и кто ее получает
-    elif vastus==4:
+##4-Упорядочить зарплаты в порядке возрастания и убывания вместе с именами,
+#while True:
+#    print("0-Andmed ekraanile\n1-Andmete lisamine\n2-Andmete eemaldamine\n3 - kelle on suurim palk\4-sorteerimine\n")
+#    vastus=int(input())
+#    if vastus==0:
+#        naita_andmed(inimesed,palgad)
+#    elif vastus==1:
+#        inimesed,palgad=andmete_lisamine(inimesed,palgad) #1-Добавить еще несколько человек и зарплат(кол-во говорит пользователь)
+#    elif vastus==2:
+#        inimesed,palgad=andmed_kustutamine(inimesed, palgad) #2-Удалить человека и его зарплату(вводим имя)
+#    elif vastus==3:
+#        rikkad_inimesed=kellel_on_suurim_palk(inimesed, palgad)#3 Кто получает самую большую зарплату и кто ее получает
+#    elif vastus==4:
+#        inimesed,palgad=sorteerimine(inimesed,palgad)
 
+#while True:
+#    print("1. Sorteerimine")
+#    print("2. Exit")
+
+#    vastus = int(input("Vali tegevus: "))
+
+#    if vastus == 1:
+#        inimesed, palgad = sorteerimine(inimesed, palgad)
+#        print("Zarplaty v porjadke vozrastanija:", inimesed, palgad)
+#        print("Zarplaty v porjadke ubyvanija:", inimesed[::-1], palgad[::-1])
+#    elif vastus == 2:
+#        break
+#    else:
+#        print("Vale valik. Proovi uuesti.")
 
    
 #Мое решение 
@@ -82,14 +103,7 @@ while True:
 #        max_palk = p
 #        i = palgad.index(p)
 #        kellel = inimesed[i]
-#print(f"Самая большая зарплата {max
-
-
-
-
-
-
-
+#print(f"Самая большая зарплата {max_palk}
 
 
 
@@ -169,19 +183,4 @@ while True:
 #else:
 #    print("Liitarv")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+####Registreerimine ja autoriseerimine"

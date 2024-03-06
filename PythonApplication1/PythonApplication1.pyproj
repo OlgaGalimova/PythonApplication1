@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>8c37605e-13a9-4bed-9bc4-86a697063894</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>moduli kasutamine .py</StartupFile>
+    <StartupFile>fail.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,6 +21,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="fail.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="for i in range.py">
       <SubType>Code</SubType>
     </Compile>
@@ -55,6 +58,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="PythonApplication1.py" />
+    <Compile Include="Registreerimine ja autoriseerimine.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Sirakus.py">
       <SubType>Code</SubType>
     </Compile>
@@ -68,6 +74,7 @@
   <ItemGroup>
     <Content Include="Blank diagram %282%29.pdf" />
     <Content Include="Blank diagram.pdf" />
+    <Content Include="Kuud.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
